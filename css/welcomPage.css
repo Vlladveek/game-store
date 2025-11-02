@@ -1,0 +1,111 @@
+.first-picture {
+    width: 250px;
+    height: 330px;
+}
+
+.first-picture:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 20px 5px rgb(113, 168, 172);
+}
+
+.second-picture {
+    width: 250px;
+    height: 330px;
+}
+
+.second-picture:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 20px 5px rgb(209, 125, 184);
+}
+
+.third-picture {
+    width: 250px;
+    height: 330px;
+}
+
+.third-picture:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 20px 5px rgb(47, 55, 129);
+}
+
+.fourth-picture {
+    width: 250px;
+    height: 330px;
+}
+
+.fourth-picture:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 20px 5px rgb(153, 154, 163);
+}
+
+
+
+.body {
+    background-color: #202634;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card1 {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+.card2 {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #c76dc2;
+}
+
+.card3 {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #2d2575;
+}
+
+.card4 {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #6a6d79;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+.text {
+    font-size: 25px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.card1.text {
+background-color: #5a7777;
+}
+
