@@ -1,3 +1,8 @@
+/* cascade classes applies to the element */
+.card3-new {
+    min-width: 500px;
+}
+
 .first-picture {
     width: 250px;
     height: 330px;
@@ -55,13 +60,15 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.images > div {
- position: relative;
+
+.images>div {
+    position: relative;
     width: 250px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
 }
+
 /*.card1 {
     position: relative;
     width: 250px;
@@ -134,8 +141,11 @@
     background-color: #6a6d79;
 }
 
-.card1:hover, .card2:hover, .card3:hover, .card4:hover {
-transform: scale(1.05);
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+    transform: scale(1.05);
 }
 
 /*.card2:hover {
@@ -148,5 +158,67 @@ transform: scale(1.05);
 
 .card4:hover {
     transform: scale(1.05);
-}*\
+}*/
 
+.news {
+    position: relative;
+}
+
+.news-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.news-item:nth-child(1) {
+    background-color: red;
+    z-index: 2;
+}
+
+.news-item:nth-child(2) {
+    background-color: green;
+    z-index: 0;
+}
+
+.news-item:nth-child(3) {
+    background-color: blue;
+    z-index: 1;
+}
+
+.text {
+    color: white;
+    color: red;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: white;
+    color: red;
+}
+
+[name="second-text"] {
+    color: red;
+    font-size: 20px;
+}
+
+[data-my-attribute="my-value"] {
+    color: blue;
+    font-size: 20px;
+}
+
+#primary-text {
+    color: aqua;
+}
+
+/* 10 + 10 + 10 = 30 (0, 3, 0)*/
+.images .card3 .text {
+    color: green
+}

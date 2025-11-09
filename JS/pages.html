@@ -13,11 +13,20 @@
     <link rel="stylesheet" href="./../css/page4.css">
     <link rel="stylesheet" href="./../css/reset.css">
 
-    <style>
-        body {
-            background-color: #202634;
-        }
-    </style>
+    <!--
+        include css via <link/> tag in head section
+        use <style> tag in head section
+        (-) using style attribute for any HTML element
+        <link/> tag: internal files or external files
+    -->
+
+    <!--
+        class, id, tag name (div, p, h1, h2, h3, h4, h5, h6, etc.), attribute name and own attribute name (data-my-attribute="my-value")
+        Селектор по тегу: 1 (считай как сумма)
+        Селектор по классу: 10
+        Селектор по ID: 100
+        Стиль в атрибуте тега: 1000
+    -->
 </head>
 
 <body>
@@ -31,12 +40,13 @@
 
         <div class="card2">
             <img src="./../images/Second.jpg" class="second-picture">
-            <div class="text">
+            <div id="primary-text" style="color: blanchedalmond;" class="text" name="second-text"
+                data-my-attribute="my-value">
                 "Halo: Campaign Evolved Is a Pretty Remake, but Not an Exact One"
             </div>
         </div>
 
-        <div class="card3">
+        <div class="card3 card3-new">
             <img src="./../images/Third.jpg" class="third-picture">
             <div class="text">
                 "How Ninja Gaiden’s Razor Sharp Gameplay Still Influences Games Today"
@@ -51,8 +61,47 @@
         </div>
     </div>
 
+    <div class="news">
+        <div class="news-item">
+            <div class="news-item-title">
+                <h2>News Title 1</h2>
+            </div>
+            <div class="news-item-content">
+                <p>News Content</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-item-title">
+                <h2>News Title 2</h2>
+            </div>
+            <div class="news-item-content">
+                <p>News Content</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-item-title">
+                <h2>News Title 3</h2>
+            </div>
+            <div class="news-item-content">
+                <p>News Content</p>
+            </div>
+        </div>
+    </div>
+
     </div>
     <h1 class="name">Latest Game News</h1>
+
+    <p>
+        sdfsdfdsf
+        <span class="text-red">sdfsdf</span>
+        <strong>sdfsdfsdfsdf</strong>
+        <strike>sdfsdfdsfdsf</strike>
+        <i>asdasdasdasdasd</i>
+        <u>sdfsdfsdfsdfsdf</u>
+    </p>
+    <p>
+        dsfsd
+    </p>
 </body>
 
 </html>
